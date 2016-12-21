@@ -29,7 +29,9 @@ Depends: ${misc:Depends},
    php-doctrine-instantiator (>= 1.0),,
    php-doctrine-lexer (>= 1.0),
    php-gd,
-   php-mysql | php-sqlite3 | php-pgsql,
+   php-mysql,
+   php-sqlite3,
+   php-pgsql,
    php-symfony-browser-kit (>= 2.8),
    php-symfony-class-loader (>= 2.8),
    php-symfony-console (>= 2.8),
@@ -58,4 +60,3 @@ Description: fully-featured content management framework
  community software into one easy-to-use package.
  .
  This package contains version 8 of Drupal.
-
