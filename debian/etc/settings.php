@@ -62,8 +62,7 @@
  *
  * Database configuration will be provided via a separate file, dbconfig.php.
  */
-$databases['default'] = array();
- require_once('dbconfig.php');
+$databases = require __DIR__ . '/dbconfig.php';
 
 /*
  * The following section of the upstream configuration file is still
