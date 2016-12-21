@@ -23,7 +23,8 @@ $dbs['mysql'] = array(
                       'password' => '_DBC_DBPASS_',
                       'host' => '_DBC_DBSERVER_',
                       'port' => '_DBC_DBPORT_',
-                      'prefix' => '_DBC_BASEPATH_'
+                      'prefix' => '_DBC_BASEPATH_',
+  		                'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql'
 );
 
 $dbs['pgsql'] = array(
@@ -33,14 +34,16 @@ $dbs['pgsql'] = array(
                       'password' => '_DBC_DBPASS_',
                       'host' => '_DBC_DBSERVER_',
                       'port' => '_DBC_DBPORT_',
-                      'prefix' => '_DBC_BASEPATH_'
+                      'prefix' => '_DBC_BASEPATH_',
+  		      'namespace' => 'Drupal\\Core\\Database\\Driver\\pgsql'
+
 );
 
-$dbs['sqlite'] = array(
-                      'driver' => 'sqlite',
-                      'database' => '_DBC_BASEPATH_/_DBC_DBNAME_',
+$dbs['sqlite3'] = array(
+		      'driver' => 'sqlite',
+		      'database' => 'sites/default/files/.ht.sqlite',
 );
 
 $databases['default']['default'] = $dbs['_DBC_DBTYPE_'];
 
-?>
+return $databases;
