@@ -1,5 +1,5 @@
-drupal8 (8.2.2-1) UNRELEASED; urgency=low
+drupal8 (8.2.4) UNRELEASED; urgency=low
 
   * New Debian package (Closes: #756305)
 
- -- Gunnar Wolf <gwolf@debian.org>  Fri,  7 Oct 2016 11:06:53 -0500
+ -- Gunnar Wolf <gwolf@debian.org>  Wed,  21 Dec 2016 05:39:52 -0500
